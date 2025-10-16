@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA Role Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Heading with role="heading" and aria-level="1" -->
+    <h1 role="heading" aria-level="1">My Accessible Portfolio</h1>
+    
+    <!-- Navigation with role="navigation" -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Image with role="img" and alt attribute -->
+    <img role="img" src="profile.jpg" alt="Profile picture of developer" />
+    
+    <!-- Brief description paragraph -->
+    <p>
+        Welcome to my portfolio! I'm a passionate web developer specializing in 
+        accessible and user-friendly web applications. I love creating solutions 
+        that everyone can use, regardless of their abilities.
+    </p>
+    
+    <!-- List with at least 3 items using role="list" and role="listitem" -->
+    <ul role="list">
+        <li role="listitem">Frontend Development with React and JavaScript</li>
+        <li role="listitem">Backend Development with Node.js and Express</li>
+        <li role="listitem">Database Management with MongoDB</li>
+        <li role="listitem">Web Accessibility and ARIA Implementation</li>
+    </ul>
 
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
